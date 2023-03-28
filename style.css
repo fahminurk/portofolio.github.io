@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+/*  */
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+.color-blue {
+  background-color: dodgerblue;
+}
+/*  */
+body {
+  font-family: "Bebas Neue", cursive;
+  background-color: black;
+  color: white;
+}
+
+/* navigation */
+nav {
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+nav img {
+  width: 40px;
+  height: 30px;
+}
+nav img:hover {
+  width: 60px;
+  height: 50px;
+}
+
+/*  */
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 500px;
+}
+@media (max-width: 950px) {
+  .flex {
+    justify-content: center;
+  }
+}
+
+.flex img {
+  width: 100%;
+  padding: 50px;
+}
+.flex img,
+.flex .head-text {
+  min-width: 100px;
+  max-width: 500px;
+}
+
+.head-text {
+  font-size: xx-large;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px;
+}
+
+#show .head-text h1,
+h3 {
+  padding: 0 0 0 7px;
+  background-color: black;
+  color: white;
+}
+
+#show .head-text #satu {
+  padding: 0 0 0 7px;
+  background-color: white;
+  color: black;
+  padding-right: 7px;
+}
+
+/* profil about */
+
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 1rem;
+  min-height: 500px;
+  font-size: x-large;
+}
+
+#about img {
+  width: 80%;
+  height: auto;
+}
+
+#profile .profile h1,
+#profile .profile h4 {
+  font-size: x-large;
+}
+#details {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* gif */
+.gif {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .gif {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.webflow-badge {
+  position: fixed;
+  right: 12px;
+  bottom: 12px;
+  z-index: 999999999;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px 8px 7px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #08081b;
+  background-color: #fff;
+  font-size: 20px;
+  line-height: 14px;
+  white-space: nowrap;
+  cursor: default;
+  color: black;
+}
